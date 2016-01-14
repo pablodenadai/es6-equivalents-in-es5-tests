@@ -1,13 +1,12 @@
-import test from 'ava';
+var test = require('tape')
 
-test('ES6: arrow-function', t => {
-	var es6 = [1, 2, 3].map(n => n * 2);
-	t.same(es6, [2, 4, 6]);
-});
+test('arrow-function', t => {
+	'use strict'
 
-test('ES5: arrow-function ', t => {
-	var es5 = [1, 2, 3].map(function (n) {
-		return n * 2;
-	}, this);
-	t.same(es5, [2, 4, 6]);
-});
+	t.same(
+		[1, 2, 3].map(n => n * 2), // ES6
+		[1, 2, 3].map(function (n) { return n * 2 }, this) // ES5
+	)
+
+	t.end()
+})
