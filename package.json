@@ -1,0 +1,27 @@
+{
+  "name": "es6-equivalents-in-es5-tested",
+  "version": "0.0.1",
+  "description": "ES6 Equivalents In ES5 - With unit tests",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghpabs/es6-equivalents-in-es5-tested.git"
+  },
+  "keywords": [
+    "es6",
+    "es5",
+    "equivalent",
+    "test"
+  ],
+  "author": "Pabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghpabs/es6-equivalents-in-es5-tested/issues"
+  },
+  "homepage": "https://github.com/ghpabs/es6-equivalents-in-es5-tested#readme",
+  "devDependencies": {
+    "ava": "^0.9.1"
+  }
+}
